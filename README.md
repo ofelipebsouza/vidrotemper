@@ -1,13 +1,18 @@
 # VidroTemper
 
-Site institucional da VidroTemper, vidraçaria em Santos/SP. Inclui páginas de serviços, aplicações, contato, FAQ, sitemap e dados estruturados.
+Site institucional da VidroTemper, vidraçaria em Santos/SP. Fonte original recuperada do projeto Sites, com Home, serviços, aplicações, sobre, contato, FAQ, sitemap e dados estruturados.
+
+## Desenvolvimento
+
+```sh
+npm install
+npm run dev
+```
 
 ## Publicação na Vercel
 
-Importe este repositório na Vercel. `vercel.json` usa a compilação nativa do Next.js. A URL de produção é usada automaticamente no sitemap e nos dados estruturados; opcionalmente, defina `NEXT_PUBLIC_SITE_URL` para um domínio próprio.
+Importe este repositório na Vercel com o framework Next.js. A compilação usa `npm run build`. O sitemap e os dados estruturados usam automaticamente a URL de produção; para um domínio próprio, defina `NEXT_PUBLIC_SITE_URL`.
 
 ## Ícones
 
-Ícones oficiais Phosphor (peso regular), incluídos localmente em `components/phosphor-icon.tsx`, sob a licença MIT em `PHOSPHOR-LICENSE`.
-
-A estrutura e as imagens originais do projeto criado no Sites foram preservadas.
+Ícones oficiais Phosphor (peso regular), incluídos localmente em `components/phosphor-icon.tsx`. Licença MIT em `PHOSPHOR-LICENSE`. A identidade, textos, fotografias e páginas da fonte original foram preservados.

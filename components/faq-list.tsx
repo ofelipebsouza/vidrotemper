@@ -1,0 +1,3 @@
+import { PhosphorIcon, Stars } from "@/components/phosphor-icon";
+import { faqs } from "@/lib/content";
+export function FAQList(){const schema={"@context":"https://schema.org","@type":"FAQPage",mainEntity:faqs.map(([q,a])=>({"@type":"Question",name:q,acceptedAnswer:{"@type":"Answer",text:a}}))};return <section className="section faq-section" id="duvidas"><div className="section-intro"><span className="eyebrow">Respostas rápidas</span><h2>Antes de pedir seu orçamento</h2></div><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/><div className="faq-list">{faqs.map(([q,a])=><details key={q}><summary>{q}<PhosphorIcon name="plus" size={20}/></summary><p>{a}</p></details>)}</div></section>}
